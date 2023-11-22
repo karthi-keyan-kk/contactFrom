@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(208, 226, 255);
+
+}
+
+.App nav{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+}
+
+.App nav ul li{
+  list-style: none;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.App nav ul li a{
+  text-decoration: none;
+}
+
+.App nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.home, .contact, .services, .about, .blog{
+  width: 100%;
+  height: 45.9rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  place-content: center;
+}
+
+.contact{
+  grid-template-columns: 50%;
+  > h2{
+    margin: 45px 0;
+  }
+}
+
+.home div{
+  width: 100%;
+  text-align: justify;
+  padding: 50px;
+}
+
+.home div:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > h1{
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.home button{
+ margin-bottom: 20px;
+  width: 100px;
+  border: none;
+}
+
+.home div p{
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.home button:hover{
+  color: black;
+  background-color: #ffbf00;
+}
+
+form{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  column-gap: 100px;
+  text-align: left;
+  margin-left: -40px;
+  > button{
+    width: 100px;
+    height: 50px;
+  }
+}
+
+.con-info{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 45px;
+}
+
+.col-1 a,.col-2 a, .col-3 a{
+  text-decoration: none;
+}
+
+.col-1 ul,.col-2 ul, .col-3 ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  height: 150px;
+  border: none;
+  list-style: none;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  transition: all 0.4s;
+  > li{
+    margin-left: -20px;
+    > a{
+      color: black;
+    }
+  }
+}
+
+.mb-3{
+  width: 375px;
+}
+
+.col-1 ul:hover, .col-2 ul:hover, .col-3 ul:hover{
+  box-shadow: 0 0 15px black;
+  scale: 1.1;
+  > li a:hover{
+    color: #0d6efd;
+  }
+}
+
+.blog div p::first-letter, .services div p::first-letter, .about div p::first-letter{
+  color: red;
+  font-weight: 1000;
+  font-size: x-large;
+  line-height: 20px;
+}
+
+.blog div p{
+  width: 500px;
+}
+
+.about-col-2{
+  width: 500px;
+}
+
+.about div:first-child p{
+  margin-top: 20px;
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: justify;
+}
+
+.home-col-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  > h1{
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.services{
+  column-gap: 20px;
+}
+
+.services div p{
+  width: 500px;
+}
